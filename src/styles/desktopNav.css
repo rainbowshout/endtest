@@ -1,0 +1,83 @@
+button {
+  width: 100%;
+  background: 0;
+  outline: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.desk__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.desk__category {
+  padding: 0 12px;
+}
+.desk__category__name {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 20px;
+}
+.desk__dropdown {
+  display: none;
+  position: absolute;
+  top: 20px;
+  padding-top: 20px;
+  left: 0px;
+  width: 100%;
+  justify-content: center;
+}
+.desk__category:hover .desk__dropdown {
+  display: flex;
+}
+.desk__dropdown__1,
+.desk__dropdown__2,
+.desk__dropdown__3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+.desk__linkName {
+  cursor: pointer;
+}
+.desk__smallButton {
+  order: 2;
+}
+.desk__smallButton.top {
+  order: 0;
+}
+.desk__smallButton.top .desk__linkName {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.desk__images__col {
+  display: inline-flex;
+  flex-direction: column;
+}
+.desk__image {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+}
+.desk__image__item {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 14px;
+}
+.desk__image__tag {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 4px;
+}
+@media screen and (max-width: 999px) {
+  .desk__wrapper {
+    display: none;
+  }
+}
